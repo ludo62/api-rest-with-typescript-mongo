@@ -16,3 +16,7 @@ app.use(cookieParser());
 app.use(bodyParser.json());
 
 const server = http.createServer(app);
+
+server.listen(8080, () => {
+    console.log('Le serveur à demarré sur le port 8080');
+})
